@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스속성 종합실습</title>
+
+    <style>
+
+/* 질문!!!안쪽 테두리 바깥으로 삐져나오는 선이나 배경색 깔끔하게 정리하는 법 */
+
+        div {
+            width: 550px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+
+        div.top {
+            text-align: center;
+            font-size: 16px;
+            background-color: #abcdef;
+            border: double #123456;
+            border-width: 4px 4px 0px 4px;
+        }
+
+        div.bottom {
+            border: double #123456;
+            border-width: 0px 4px 4px 4px;
+        }
+
+        div.middle {
+            border-top: 3px solid #123456;
+            border-bottom: 1.5px dotted #123456;
+            border-left: 4px double #123456;
+            border-right: 4px double #123456;
+        }
+
+        div::first-line {
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div>   
+    <div class="top">속 담 풀 이</div>
+    <div class="middle">말 한마디에 천냥 빚진다.<br> 생각해보지 않고 나오는 대로 말하다가 실수하면 상대의 마음에 아픔을 남기게 된다.</div>
+    <div class="bottom">웃는 얼굴에 침 못 뱉는다. <br> 호의적인 의사소통 방식은 자기 말만 하는 것보다 좋은 결과로 이어진다.</div>
+</div> 
+
+</body>
+</html>
