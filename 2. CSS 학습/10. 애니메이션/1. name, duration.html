@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+        .box:hover {
+            /* animation-name: grow-up;
+            animation-duration: 3s; 
+            animation-timing-function: linear;
+            animation-delay: 1s; 
+            animation-iteration-count: 2;*/
+            
+            /* 딜레이를 단축 속성으로 쓸 땐 듀레이션보다 뒤에만 오면 됨 */
+            animation: grow-up 3s 0.1s linear infinite alternate;
+
+            
+        }
+
+        @keyframes grow-up {
+            0% {
+                width: 100px;
+            }
+            75% {
+                width: 500px;
+            }
+            100% {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>
